@@ -1,0 +1,914 @@
+Making all in src
+make[1]: Entering directory '/root/digiwage-smartchain/src'
+make[2]: Entering directory '/root/digiwage-smartchain/src'
+make[3]: Entering directory '/root/digiwage-smartchain'
+make[3]: Leaving directory '/root/digiwage-smartchain'
+  CXX      wallet/rpc/libbitcoin_wallet_a-contract.o
+In file included from ./eth_client/libethereum/Account.h:8,
+                 from ./eth_client/libethereum/State.h:7,
+                 from ./qtum/qtumstate.h:7,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./eth_client/libdevcore/Common.h:31: warning: ignoring ‘#pragma warning ’ [-Wunknown-pragmas]
+   31 | #pragma warning(push)
+      | 
+In file included from ./eth_client/libethereum/Account.h:8,
+                 from ./eth_client/libethereum/State.h:7,
+                 from ./qtum/qtumstate.h:7,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./eth_client/libdevcore/Common.h:35: warning: ignoring ‘#pragma warning ’ [-Wunknown-pragmas]
+   35 | #pragma warning(pop)
+      | 
+In file included from ./eth_client/libethcore/BlockHeader.h:12,
+                 from ./eth_client/libethereum/State.h:14,
+                 from ./qtum/qtumstate.h:7,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./eth_client/libdevcore/Guards.h:10: warning: ignoring ‘#pragma warning ’ [-Wunknown-pragmas]
+   10 | #pragma warning(push)
+      | 
+In file included from ./eth_client/libethcore/BlockHeader.h:12,
+                 from ./eth_client/libethereum/State.h:14,
+                 from ./qtum/qtumstate.h:7,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./eth_client/libdevcore/Guards.h:14: warning: ignoring ‘#pragma warning ’ [-Wunknown-pragmas]
+   14 | #pragma warning(pop)
+      | 
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h: In function ‘std::string Hash(std::string)’:
+./hash.h:155:16: warning: ‘int SHA256_Init(SHA256_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  155 |     SHA256_Init(&sha256);
+      |     ~~~~~~~~~~~^~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:73:27: note: declared here
+   73 | OSSL_DEPRECATEDIN_3_0 int SHA256_Init(SHA256_CTX *c);
+      |                           ^~~~~~~~~~~
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h:156:18: warning: ‘int SHA256_Update(SHA256_CTX*, const void*, size_t)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  156 |     SHA256_Update(&sha256, input.c_str(), input.size());
+      |     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:74:27: note: declared here
+   74 | OSSL_DEPRECATEDIN_3_0 int SHA256_Update(SHA256_CTX *c,
+      |                           ^~~~~~~~~~~~~
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h:157:17: warning: ‘int SHA256_Final(unsigned char*, SHA256_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  157 |     SHA256_Final(hash, &sha256);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:76:27: note: declared here
+   76 | OSSL_DEPRECATEDIN_3_0 int SHA256_Final(unsigned char *md, SHA256_CTX *c);
+      |                           ^~~~~~~~~~~~
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h: In function ‘void Hash(void*, unsigned int, unsigned char*)’:
+./hash.h:169:16: warning: ‘int SHA256_Init(SHA256_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  169 |     SHA256_Init(&sha256);
+      |     ~~~~~~~~~~~^~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:73:27: note: declared here
+   73 | OSSL_DEPRECATEDIN_3_0 int SHA256_Init(SHA256_CTX *c);
+      |                           ^~~~~~~~~~~
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h:170:18: warning: ‘int SHA256_Update(SHA256_CTX*, const void*, size_t)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  170 |     SHA256_Update(&sha256, in, len);
+      |     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:74:27: note: declared here
+   74 | OSSL_DEPRECATEDIN_3_0 int SHA256_Update(SHA256_CTX *c,
+      |                           ^~~~~~~~~~~~~
+In file included from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./hash.h:171:17: warning: ‘int SHA256_Final(unsigned char*, SHA256_CTX*)’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  171 |     SHA256_Final(out, &sha256);
+      |     ~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from ./hash.h:26,
+                 from ./pubkey.h:10,
+                 from ./script/script.h:14,
+                 from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/openssl/sha.h:76:27: note: declared here
+   76 | OSSL_DEPRECATEDIN_3_0 int SHA256_Final(unsigned char *md, SHA256_CTX *c);
+      |                           ^~~~~~~~~~~~
+In file included from ./primitives/transaction.h:11,
+                 from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./script/script.h: In member function ‘CScript& CScript::operator<<(opcodetype)’:
+./script/script.h:462:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  462 |         if (opcode < 0 || opcode > 0xff) // Should not happen with enum : unsigned char
+      |             ~~~~~~~^~~
+./script/script.h:462:34: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  462 |         if (opcode < 0 || opcode > 0xff) // Should not happen with enum : unsigned char
+      |                           ~~~~~~~^~~~~~
+In file included from ./chain.h:22,
+                 from ./main.h:20,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./util.h: At global scope:
+./util.h:49:9: warning: redundant redeclaration of ‘uint256 ParseHashV(const UniValue&, std::string)’ in same scope [-Wredundant-decls]
+   49 | uint256 ParseHashV(const UniValue& v, std::string strName);
+      |         ^~~~~~~~~~
+In file included from wallet/rpc/contract.cpp:7:
+./rpc/server.h:73:16: note: previous declaration of ‘uint256 ParseHashV(const UniValue&, std::string)’
+   73 | extern uint256 ParseHashV(const UniValue& v, std::string strName); // utilstrencodings.h or util.h
+      |                ^~~~~~~~~~
+In file included from ./chain.h:22,
+                 from ./main.h:20,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./util.h:50:28: warning: redundant redeclaration of ‘std::vector<unsigned char> ParseHexV(const UniValue&, std::string)’ in same scope [-Wredundant-decls]
+   50 | std::vector<unsigned char> ParseHexV(const UniValue& v, std::string strName);
+      |                            ^~~~~~~~~
+In file included from wallet/rpc/contract.cpp:7:
+./rpc/server.h:74:35: note: previous declaration of ‘std::vector<unsigned char> ParseHexV(const UniValue&, std::string)’
+   74 | extern std::vector<unsigned char> ParseHexV(const UniValue& v, std::string strName); // utilstrencodings.h or util.h
+      |                                   ^~~~~~~~~
+In file included from ./chain.h:22,
+                 from ./main.h:20,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./util.h:51:13: warning: redundant redeclaration of ‘std::string HelpExampleCli(const string&, const string&)’ in same scope [-Wredundant-decls]
+   51 | std::string HelpExampleCli(const std::string& methodname, const std::string& args);
+      |             ^~~~~~~~~~~~~~
+In file included from wallet/rpc/contract.cpp:7:
+./rpc/server.h:66:13: note: previous declaration of ‘std::string HelpExampleCli(const string&, const string&)’
+   66 | std::string HelpExampleCli(const std::string& methodname, const std::string& args);
+      |             ^~~~~~~~~~~~~~
+In file included from ./chain.h:22,
+                 from ./main.h:20,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./util.h:52:13: warning: redundant redeclaration of ‘std::string HelpExampleRpc(const string&, const string&)’ in same scope [-Wredundant-decls]
+   52 | std::string HelpExampleRpc(const std::string& methodname, const std::string& args);
+      |             ^~~~~~~~~~~~~~
+In file included from wallet/rpc/contract.cpp:7:
+./rpc/server.h:67:13: note: previous declaration of ‘std::string HelpExampleRpc(const string&, const string&)’
+   67 | std::string HelpExampleRpc(const std::string& methodname, const std::string& args);
+      |             ^~~~~~~~~~~~~~
+In file included from ./evmone/evmc/include/evmc/evmc.hpp:7,
+                 from ./eth_client/libevm/ExtVMFace.h:15,
+                 from ./eth_client/libethereum/State.h:17,
+                 from ./qtum/qtumstate.h:7,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./evmone/evmc/include/evmc/helpers.h: In function ‘const char* evmc_status_code_to_string(evmc_status_code)’:
+./evmone/evmc/include/evmc/helpers.h:223:12: warning: enumeration value ‘EVMC_CREATE_WITH_VALUE’ not handled in switch [-Wswitch]
+  223 |     switch (status_code)
+      |            ^
+In file included from ./qtum/qtumstate.h:14,
+                 from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./qtum/qtumtransaction.h: In static member function ‘static VersionVM VersionVM::fromRaw(uint32_t)’:
+./qtum/qtumtransaction.h:24:24: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   24 |         VersionVM x = *(VersionVM*)&val;
+      |                        ^~~~~~~~~~~~~~~~
+./qtum/qtumtransaction.h:24:24: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+In file included from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./qtum/qtumstate.h: In constructor ‘ResultExecute::ResultExecute(const dev::eth::ExecutionResult&, const QtumTransactionReceipt&, const CTransaction&)’:
+./qtum/qtumstate.h:97:45: warning: implicitly-declared ‘CTransaction::CTransaction(const CTransaction&)’ is deprecated [-Wdeprecated-copy]
+   97 |           execRes(_execRes), txRec(_txRec), tx(_tx) {}
+      |                                             ^~~~~~~
+In file included from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./primitives/transaction.h:226:19: note: because ‘CTransaction’ has user-provided ‘CTransaction& CTransaction::operator=(const CTransaction&)’
+  226 |     CTransaction& operator=(const CTransaction& tx);
+      |                   ^~~~~~~~
+In file included from ./main.h:57,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./qtum/qtumstate.h: In constructor ‘ResultExecute::ResultExecute(dev::eth::ExecutionResult&&, QtumTransactionReceipt&&, CTransaction&&)’:
+./qtum/qtumstate.h:100:67: warning: implicitly-declared ‘CTransaction::CTransaction(const CTransaction&)’ is deprecated [-Wdeprecated-copy]
+  100 |           execRes(std::move(_execRes)), txRec(std::move(_txRec)), tx(std::move(_tx)) {}
+      |                                                                   ^~~~~~~~~~~~~~~~~~
+In file included from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./primitives/transaction.h:226:19: note: because ‘CTransaction’ has user-provided ‘CTransaction& CTransaction::operator=(const CTransaction&)’
+  226 |     CTransaction& operator=(const CTransaction& tx);
+      |                   ^~~~~~~~
+In file included from ./main.h:61,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./script/solver.h: At global scope:
+./script/solver.h:56:6: warning: redundant redeclaration of ‘bool ExtractSenderData(const CScript&, CScript*, CScript*)’ in same scope [-Wredundant-decls]
+   56 | bool ExtractSenderData(const CScript& outputPubKey, CScript* senderPubKey, CScript* senderSig);
+      |      ^~~~~~~~~~~~~~~~~
+In file included from ./base58.h:22,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./script/standard.h:82:6: note: previous declaration of ‘bool ExtractSenderData(const CScript&, CScript*, CScript*)’
+   82 | bool ExtractSenderData(const CScript& outputPubKey, CScript* senderPubKey, CScript* senderSig); // Declaration for function defined in standard.cpp
+      |      ^~~~~~~~~~~~~~~~~
+In file included from ./main.h:61,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./script/solver.h:73:9: warning: redundant redeclaration of ‘CScript GetScriptForRawPubKey(const CPubKey&)’ in same scope [-Wredundant-decls]
+   73 | CScript GetScriptForRawPubKey(const CPubKey& pubkey);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ./base58.h:22,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./script/standard.h:86:9: note: previous declaration of ‘CScript GetScriptForRawPubKey(const CPubKey&)’
+   86 | CScript GetScriptForRawPubKey(const CPubKey& pubKey);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ./main.h:61,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./script/solver.h:80:9: warning: redundant redeclaration of ‘CScript GetScriptForMultisig(int, const std::vector<CPubKey>&)’ in same scope [-Wredundant-decls]
+   80 | CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from ./base58.h:22,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./script/standard.h:87:9: note: previous declaration of ‘CScript GetScriptForMultisig(int, const std::vector<CPubKey>&)’
+   87 | CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
+      |         ^~~~~~~~~~~~~~~~~~~~
+In file included from wallet/rpc/contract.cpp:8:
+./wallet/wallet.h: In constructor ‘CMerkleTx::CMerkleTx(const CTransaction&)’:
+./wallet/wallet.h:662:60: warning: implicitly-declared ‘CTransaction::CTransaction(const CTransaction&)’ is deprecated [-Wdeprecated-copy]
+  662 |     CMerkleTx(const CTransaction& txIn) : CTransaction(txIn)
+      |                                                            ^
+In file included from ./primitives/block.h:10,
+                 from ./chainparams.h:14,
+                 from ./base58.h:18,
+                 from ./wallet/wallet.h:13,
+                 from wallet/rpc/contract.cpp:8:
+./primitives/transaction.h:226:19: note: because ‘CTransaction’ has user-provided ‘CTransaction& CTransaction::operator=(const CTransaction&)’
+  226 |     CTransaction& operator=(const CTransaction& tx);
+      |                   ^~~~~~~~
+In file included from wallet/rpc/contract.cpp:15:
+./util/strencodings.h: At global scope:
+./util/strencodings.h:27:6: error: multiple definition of ‘enum SafeChars’
+   27 | enum SafeChars
+      |      ^~~~~~~~~
+In file included from ./net.h:21,
+                 from ./main.h:24,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./utilstrencodings.h:28:6: note: previous definition here
+   28 | enum SafeChars
+      |      ^~~~~~~~~
+In file included from wallet/rpc/contract.cpp:15:
+./util/strencodings.h:69:13: warning: redundant redeclaration of ‘signed char HexDigit(char)’ in same scope [-Wredundant-decls]
+   69 | signed char HexDigit(char c);
+      |             ^~~~~~~~
+In file included from ./net.h:21,
+                 from ./main.h:24,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./utilstrencodings.h:55:13: note: previous declaration of ‘signed char HexDigit(char)’
+   55 | signed char HexDigit(char c);
+      |             ^~~~~~~~
+In file included from wallet/rpc/contract.cpp:15:
+./util/strencodings.h:147:13: warning: redundant redeclaration of ‘std::string i64tostr(int64_t)’ in same scope [-Wredundant-decls]
+  147 | std::string i64tostr(int64_t n);
+      |             ^~~~~~~~
+In file included from ./net.h:21,
+                 from ./main.h:24,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./utilstrencodings.h:68:13: note: previous declaration of ‘std::string i64tostr(int64_t)’
+   68 | std::string i64tostr(int64_t n);
+      |             ^~~~~~~~
+In file included from wallet/rpc/contract.cpp:15:
+./util/strencodings.h:148:9: warning: redundant redeclaration of ‘int64_t atoi64(const string&)’ in same scope [-Wredundant-decls]
+  148 | int64_t atoi64(const std::string& str);
+      |         ^~~~~~
+In file included from ./net.h:21,
+                 from ./main.h:24,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./utilstrencodings.h:71:9: note: previous declaration of ‘int64_t atoi64(const string&)’
+   71 | int64_t atoi64(const std::string& str);
+      |         ^~~~~~
+In file included from wallet/rpc/contract.cpp:15:
+./util/strencodings.h:256:6: error: redefinition of ‘template<class T> bool TimingResistantEqual(const T&, const T&)’
+  256 | bool TimingResistantEqual(const T& a, const T& b)
+      |      ^~~~~~~~~~~~~~~~~~~~
+In file included from ./net.h:21,
+                 from ./main.h:24,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+./utilstrencodings.h:143:6: note: ‘template<class T> bool TimingResistantEqual(const T&, const T&)’ previously declared here
+  143 | bool TimingResistantEqual(const T& a, const T& b)
+      |      ^~~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:43:8: error: ‘ArgsManager’ does not name a type
+   43 | extern ArgsManager gArgs; // Declare gArgs as extern
+      |        ^~~~~~~~~~~
+wallet/rpc/contract.cpp: In function ‘bool {anonymous}::IsValidContractSenderAddress(const CTxDestination&)’:
+wallet/rpc/contract.cpp:63:31: error: no matching function for call to ‘get_if<CKeyID>(const CTxDestination*)’
+   63 |     return std::get_if<CKeyID>(&dest) != nullptr;
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1156:5: note: candidate: ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(std::variant<_Types ...>*)’
+ 1156 |     get_if(variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1156:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:63:31: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(std::variant<_Types ...>*)’
+   63 |     return std::get_if<CKeyID>(&dest) != nullptr;
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp:63:31: note:   expected a constant of type ‘long unsigned int’, got ‘CKeyID’
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1170:5: note: candidate: ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<const typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(const std::variant<_Types ...>*)’
+ 1170 |     get_if(const variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1170:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:63:31: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<const typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(const std::variant<_Types ...>*)’
+   63 |     return std::get_if<CKeyID>(&dest) != nullptr;
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp:63:31: note:   expected a constant of type ‘long unsigned int’, got ‘CKeyID’
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1183:5: note: candidate: ‘template<class _Tp, class ... _Types> constexpr std::add_pointer_t<_Tp> std::get_if(std::variant<_Types ...>*)’
+ 1183 |     get_if(variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1183:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:63:31: note:   types ‘std::variant<_Types ...>’ and ‘const CTxDestination’ {aka ‘const boost::variant<CNoDestination, CKeyID, CScriptID>’} have incompatible cv-qualifiers
+   63 |     return std::get_if<CKeyID>(&dest) != nullptr;
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1194:5: note: candidate: ‘template<class _Tp, class ... _Types> constexpr std::add_pointer_t<const _Tp> std::get_if(const std::variant<_Types ...>*)’
+ 1194 |     get_if(const variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1194:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:63:31: note:   ‘const CTxDestination’ {aka ‘const boost::variant<CNoDestination, CKeyID, CScriptID>’} is not derived from ‘const std::variant<_Types ...>’
+   63 |     return std::get_if<CKeyID>(&dest) != nullptr;
+      |            ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp: In function ‘void {anonymous}::AvailableCoinsWallet(const CWallet&, std::vector<COutput>&, const CCoinControl*)’:
+wallet/rpc/contract.cpp:78:27: error: cannot convert ‘std::vector<COutput>’ to ‘std::vector<COutput>*’
+   78 |     wallet.AvailableCoins(vecOutputs, true, coinControl); // Adjust parameters as needed based on your CWallet::AvailableCoins
+      |                           ^~~~~~~~~~
+      |                           |
+      |                           std::vector<COutput>
+In file included from wallet/rpc/contract.cpp:8:
+./wallet/wallet.h:333:47: note:   initializing argument 1 of ‘bool CWallet::AvailableCoins(std::vector<COutput>*, bool, const CCoinControl*, bool, AvailableCoinsType, bool, int, bool, bool) const’
+  333 |     bool AvailableCoins(std::vector<COutput>* pCoins, bool fOnlyConfirmed = true, const CCoinControl* coinControl = NULL, bool fIncludeZeroValue = false, AvailableCoinsType nCoinType = ALL_COINS, bool fUseIX = false, int nWatchonlyConfig = 1, bool fIncludeColdStaking=false, bool fIncludeDelegated=true) const;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+wallet/rpc/contract.cpp: In function ‘CKeyID {anonymous}::GetKeyIDForDestination(const CTxDestination&)’:
+wallet/rpc/contract.cpp:134:51: error: no matching function for call to ‘get_if<CKeyID>(const CTxDestination*)’
+  134 |      const CKeyID* keyid_ptr = std::get_if<CKeyID>(&dest);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1156:5: note: candidate: ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(std::variant<_Types ...>*)’
+ 1156 |     get_if(variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1156:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:134:51: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(std::variant<_Types ...>*)’
+  134 |      const CKeyID* keyid_ptr = std::get_if<CKeyID>(&dest);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp:134:51: note:   expected a constant of type ‘long unsigned int’, got ‘CKeyID’
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1170:5: note: candidate: ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<const typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(const std::variant<_Types ...>*)’
+ 1170 |     get_if(const variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1170:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:134:51: error: type/value mismatch at argument 1 in template parameter list for ‘template<long unsigned int _Np, class ... _Types> constexpr std::add_pointer_t<const typename std::variant_alternative<_Np, std::variant<_Types ...> >::type> std::get_if(const std::variant<_Types ...>*)’
+  134 |      const CKeyID* keyid_ptr = std::get_if<CKeyID>(&dest);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp:134:51: note:   expected a constant of type ‘long unsigned int’, got ‘CKeyID’
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1183:5: note: candidate: ‘template<class _Tp, class ... _Types> constexpr std::add_pointer_t<_Tp> std::get_if(std::variant<_Types ...>*)’
+ 1183 |     get_if(variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1183:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:134:51: note:   types ‘std::variant<_Types ...>’ and ‘const CTxDestination’ {aka ‘const boost::variant<CNoDestination, CKeyID, CScriptID>’} have incompatible cv-qualifiers
+  134 |      const CKeyID* keyid_ptr = std::get_if<CKeyID>(&dest);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from /usr/include/boost/container_hash/hash.hpp:115,
+                 from /usr/include/boost/functional/hash.hpp:6,
+                 from /usr/include/boost/unordered/unordered_map.hpp:18,
+                 from /usr/include/boost/unordered_map.hpp:17,
+                 from ./coins.h:20,
+                 from ./main.h:22,
+                 from ./kernel.h:11,
+                 from ./wallet/wallet.h:16,
+                 from wallet/rpc/contract.cpp:8:
+/usr/include/c++/11/variant:1194:5: note: candidate: ‘template<class _Tp, class ... _Types> constexpr std::add_pointer_t<const _Tp> std::get_if(const std::variant<_Types ...>*)’
+ 1194 |     get_if(const variant<_Types...>* __ptr) noexcept
+      |     ^~~~~~
+/usr/include/c++/11/variant:1194:5: note:   template argument deduction/substitution failed:
+wallet/rpc/contract.cpp:134:51: note:   ‘const CTxDestination’ {aka ‘const boost::variant<CNoDestination, CKeyID, CScriptID>’} is not derived from ‘const std::variant<_Types ...>’
+  134 |      const CKeyID* keyid_ptr = std::get_if<CKeyID>(&dest);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~~~
+wallet/rpc/contract.cpp: In function ‘void {anonymous}::getGasRelatedDefaults(uint64_t&, CAmount&, CAmount&, int*)’:
+wallet/rpc/contract.cpp:167:22: error: ‘MIN_GAS_PRICE’ was not declared in this scope; did you mean ‘MAX_RPC_GAS_PRICE’?
+  167 |     minGasPriceOut = MIN_GAS_PRICE;              // Use const from main.h (or define MIN_GAS_PRICE appropriately)
+      |                      ^~~~~~~~~~~~~
+      |                      MAX_RPC_GAS_PRICE
+wallet/rpc/contract.cpp: At global scope:
+wallet/rpc/contract.cpp:213:49: error: ‘TransactionError’ does not name a type
+  213 | std::string JSONRPCTransactionErrorString(const TransactionError& err) {
+      |                                                 ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp: In function ‘std::string {anonymous}::JSONRPCTransactionErrorString(const int&)’:
+wallet/rpc/contract.cpp:215:14: error: ‘TransactionError’ has not been declared
+  215 |         case TransactionError::OK: return "OK";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:216:14: error: ‘TransactionError’ has not been declared
+  216 |         case TransactionError::INVALID_PSBT: return "Invalid PSBT";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:217:14: error: ‘TransactionError’ has not been declared
+  217 |         case TransactionError::PSBT_MISMATCH: return "PSBT mismatch";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:218:14: error: ‘TransactionError’ has not been declared
+  218 |         case TransactionError::SIGHASH_MISMATCH: return "Sighash mismatch";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:219:14: error: ‘TransactionError’ has not been declared
+  219 |         case TransactionError::MISSING_INPUTS: return "Missing inputs";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:220:14: error: ‘TransactionError’ has not been declared
+  220 |         case TransactionError::INVALID_TX: return "Invalid transaction";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:222:14: error: ‘TransactionError’ has not been declared
+  222 |         case TransactionError::INVALID_INPUT_INDEX: return "Invalid input index";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:223:14: error: ‘TransactionError’ has not been declared
+  223 |         case TransactionError::UTXO_NOT_FOUND: return "UTXO not found";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:224:14: error: ‘TransactionError’ has not been declared
+  224 |         case TransactionError::MISSING_UTXO: return "Missing UTXO";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:225:14: error: ‘TransactionError’ has not been declared
+  225 |         case TransactionError::INVALID_PREVOUT: return "Invalid prevout";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:226:14: error: ‘TransactionError’ has not been declared
+  226 |         case TransactionError::INVALID_SEQUENCE: return "Invalid sequence";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:227:14: error: ‘TransactionError’ has not been declared
+  227 |         case TransactionError::INVALID_SCRIPT: return "Invalid script";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:228:14: error: ‘TransactionError’ has not been declared
+  228 |         case TransactionError::INVALID_AMOUNT: return "Invalid amount";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:229:14: error: ‘TransactionError’ has not been declared
+  229 |         case TransactionError::INVALID_FEE: return "Invalid fee";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:230:14: error: ‘TransactionError’ has not been declared
+  230 |         case TransactionError::INVALID_LOCKTIME: return "Invalid locktime";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:231:14: error: ‘TransactionError’ has not been declared
+  231 |         case TransactionError::INVALID_VERSION: return "Invalid version";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:232:14: error: ‘TransactionError’ has not been declared
+  232 |         case TransactionError::INVALID_SIGNATURE: return "Invalid signature";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:233:14: error: ‘TransactionError’ has not been declared
+  233 |         case TransactionError::SIGNATURE_FAILED: return "Signature failed";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:234:14: error: ‘TransactionError’ has not been declared
+  234 |         case TransactionError::WITNESS_MISMATCH: return "Witness mismatch";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:235:14: error: ‘TransactionError’ has not been declared
+  235 |         case TransactionError::INVALID_WITNESS: return "Invalid witness";
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:236:14: error: ‘TransactionError’ has not been declared
+  236 |         case TransactionError::PSBT_INVALID: return "Invalid PSBT"; // General PSBT invalidity
+      |              ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp: At global scope:
+wallet/rpc/contract.cpp:247:31: error: ‘JSONRPCRequest’ does not name a type; did you mean ‘JSONRequest’?
+  247 | UniValue createcontract(const JSONRPCRequest& request) // Use JSONRPCRequest standard
+      |                               ^~~~~~~~~~~~~~
+      |                               JSONRequest
+wallet/rpc/contract.cpp: In function ‘UniValue createcontract(const int&)’:
+wallet/rpc/contract.cpp:249:17: error: request for member ‘fHelp’ in ‘request’, which is of non-class type ‘const int’
+  249 |     if (request.fHelp || request.params.size() < 1 || request.params.size() > 6) {
+      |                 ^~~~~
+wallet/rpc/contract.cpp:249:34: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  249 |     if (request.fHelp || request.params.size() < 1 || request.params.size() > 6) {
+      |                                  ^~~~~~
+wallet/rpc/contract.cpp:249:63: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  249 |     if (request.fHelp || request.params.size() < 1 || request.params.size() > 6) {
+      |                                                               ^~~~~~
+wallet/rpc/contract.cpp:305:26: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  305 |     RPCTypeCheck(request.params, { UniValue::VSTR, UniValue::VNUM, UniValue::VNUM, UniValue::VSTR, UniValue::VBOOL, UniValue::VBOOL }, true);
+      |                          ^~~~~~
+wallet/rpc/contract.cpp:307:40: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  307 |     std::string bytecode_hex = request.params[0].get_str();
+      |                                        ^~~~~~
+wallet/rpc/contract.cpp:319:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  319 |     if (request.params.size() > 1 && !request.params[1].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:319:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  319 |     if (request.params.size() > 1 && !request.params[1].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:320:42: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  320 |         int64_t nGasLimitInput = request.params[1].getInt<int64_t>();
+      |                                          ^~~~~~
+wallet/rpc/contract.cpp:320:66: error: expected primary-expression before ‘>’ token
+  320 |         int64_t nGasLimitInput = request.params[1].getInt<int64_t>();
+      |                                                                  ^
+wallet/rpc/contract.cpp:320:68: error: expected primary-expression before ‘)’ token
+  320 |         int64_t nGasLimitInput = request.params[1].getInt<int64_t>();
+      |                                                                    ^
+wallet/rpc/contract.cpp:328:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  328 |     if (request.params.size() > 2 && !request.params[2].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:328:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  328 |     if (request.params.size() > 2 && !request.params[2].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:329:45: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  329 |         nGasPrice = AmountFromValue(request.params[2]);
+      |                                             ^~~~~~
+wallet/rpc/contract.cpp:332:34: error: ‘gArgs’ was not declared in this scope; did you mean ‘mapArgs’?
+  332 |         CAmount maxRpcGasPrice = gArgs.GetIntArg("-rpcmaxgasprice", MAX_RPC_GAS_PRICE) * COIN; // Ensure MAX_RPC_GAS_PRICE is defined correctly or use a default
+      |                                  ^~~~~
+      |                                  mapArgs
+wallet/rpc/contract.cpp:340:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  340 |     if (request.params.size() > 3 && !request.params[3].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:340:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  340 |     if (request.params.size() > 3 && !request.params[3].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:341:41: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  341 |         std::string senderStr = request.params[3].get_str();
+      |                                         ^~~~~~
+wallet/rpc/contract.cpp:342:25: error: ‘DecodeDestination’ was not declared in this scope; did you mean ‘CNoDestination’?
+  342 |         senderAddress = DecodeDestination(senderStr); // Use key_io function
+      |                         ^~~~~~~~~~~~~~~~~
+      |                         CNoDestination
+wallet/rpc/contract.cpp:352:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  352 |     if (request.params.size() > 4 && !request.params[4].isNull()) fBroadcast = request.params[4].get_bool();
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:352:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  352 |     if (request.params.size() > 4 && !request.params[4].isNull()) fBroadcast = request.params[4].get_bool();
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:352:88: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  352 |     if (request.params.size() > 4 && !request.params[4].isNull()) fBroadcast = request.params[4].get_bool();
+      |                                                                                        ^~~~~~
+wallet/rpc/contract.cpp:354:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  354 |     if (request.params.size() > 5 && !request.params[5].isNull()) fPsbt = request.params[5].get_bool();
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:354:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  354 |     if (request.params.size() > 5 && !request.params[5].isNull()) fPsbt = request.params[5].get_bool();
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:354:83: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  354 |     if (request.params.size() > 5 && !request.params[5].isNull()) fPsbt = request.params[5].get_bool();
+      |                                                                                   ^~~~~~
+wallet/rpc/contract.cpp:375:41: error: ‘class CWallet’ has no member named ‘GetAvailableBalance’
+  375 |     CAmount availableBalance = pwallet->GetAvailableBalance();
+      |                                         ^~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:446:17: error: ‘CRecipient’ was not declared in this scope
+  446 |     std::vector<CRecipient> vecSend;
+      |                 ^~~~~~~~~~
+wallet/rpc/contract.cpp:446:27: error: template argument 1 is invalid
+  446 |     std::vector<CRecipient> vecSend;
+      |                           ^
+wallet/rpc/contract.cpp:446:27: error: template argument 2 is invalid
+wallet/rpc/contract.cpp:448:15: error: expected ‘;’ before ‘recipient’
+  448 |     CRecipient recipient = {scriptPubKey, CAmount(0), false}; // Amount 0, subtract fee from amount = false
+      |               ^~~~~~~~~~
+      |               ;
+wallet/rpc/contract.cpp:449:13: error: request for member ‘push_back’ in ‘vecSend’, which is of non-class type ‘int’
+  449 |     vecSend.push_back(recipient);
+      |             ^~~~~~~~~
+wallet/rpc/contract.cpp:449:23: error: ‘recipient’ was not declared in this scope
+  449 |     vecSend.push_back(recipient);
+      |                       ^~~~~~~~~
+wallet/rpc/contract.cpp:460:16: error: ‘CreateTransaction’ was not declared in this scope; did you mean ‘GetTransaction’?
+  460 |     auto res = CreateTransaction(*pwallet, vecSend, nFeeRet, nChangePosInOut, strFailReason, coinControl, sign);
+      |                ^~~~~~~~~~~~~~~~~
+      |                GetTransaction
+wallet/rpc/contract.cpp:478:29: error: ‘EncodeDestination’ was not declared in this scope; did you mean ‘CNoDestination’?
+  478 |     result.pushKV("sender", EncodeDestination(signSenderAddress)); // Use key_io function
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             CNoDestination
+wallet/rpc/contract.cpp:486:9: error: ‘PartiallySignedTransaction’ was not declared in this scope
+  486 |         PartiallySignedTransaction psbtx(CMutableTransaction(*tx));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:490:15: error: ‘TransactionError’ does not name a type
+  490 |         const TransactionError err = pwallet->FillPSBT(psbtx, complete, SIGHASH_ALL, false, true); // Check FillPSBT args
+      |               ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:491:13: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+  491 |         if (err != TransactionError::OK) {
+      |             ^~~
+      |             erf
+wallet/rpc/contract.cpp:491:20: error: ‘TransactionError’ has not been declared
+  491 |         if (err != TransactionError::OK) {
+      |                    ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:497:17: error: ‘psbtx’ was not declared in this scope
+  497 |         ssTx << psbtx;
+      |                 ^~~~~
+wallet/rpc/contract.cpp: At global scope:
+wallet/rpc/contract.cpp:526:31: error: ‘JSONRPCRequest’ does not name a type; did you mean ‘JSONRequest’?
+  526 | UniValue sendtocontract(const JSONRPCRequest& request) // Use JSONRPCRequest standard
+      |                               ^~~~~~~~~~~~~~
+      |                               JSONRequest
+wallet/rpc/contract.cpp: In function ‘UniValue sendtocontract(const int&)’:
+wallet/rpc/contract.cpp:528:18: error: request for member ‘fHelp’ in ‘request’, which is of non-class type ‘const int’
+  528 |      if (request.fHelp || request.params.size() < 2 || request.params.size() > 8) {
+      |                  ^~~~~
+wallet/rpc/contract.cpp:528:35: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  528 |      if (request.fHelp || request.params.size() < 2 || request.params.size() > 8) {
+      |                                   ^~~~~~
+wallet/rpc/contract.cpp:528:64: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  528 |      if (request.fHelp || request.params.size() < 2 || request.params.size() > 8) {
+      |                                                                ^~~~~~
+wallet/rpc/contract.cpp:584:26: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  584 |     RPCTypeCheck(request.params, { UniValue::VSTR, UniValue::VSTR, UniValue::VNUM, UniValue::VNUM, UniValue::VNUM, UniValue::VSTR, UniValue::VBOOL, UniValue::VBOOL }, true);
+      |                          ^~~~~~
+wallet/rpc/contract.cpp:587:43: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  587 |     std::string contractAddrStr = request.params[0].get_str();
+      |                                           ^~~~~~
+wallet/rpc/contract.cpp:611:35: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  611 |     std::string datahex = request.params[1].get_str();
+      |                                   ^~~~~~
+wallet/rpc/contract.cpp:620:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  620 |     if (request.params.size() > 2 && !request.params[2].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:620:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  620 |     if (request.params.size() > 2 && !request.params[2].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:621:43: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  621 |         nAmount = AmountFromValue(request.params[2]);
+      |                                           ^~~~~~
+wallet/rpc/contract.cpp:632:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  632 |     if (request.params.size() > 3 && !request.params[3].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:632:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  632 |     if (request.params.size() > 3 && !request.params[3].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:633:42: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  633 |         int64_t nGasLimitInput = request.params[3].getInt<int64_t>();
+      |                                          ^~~~~~
+wallet/rpc/contract.cpp:633:66: error: expected primary-expression before ‘>’ token
+  633 |         int64_t nGasLimitInput = request.params[3].getInt<int64_t>();
+      |                                                                  ^
+wallet/rpc/contract.cpp:633:68: error: expected primary-expression before ‘)’ token
+  633 |         int64_t nGasLimitInput = request.params[3].getInt<int64_t>();
+      |                                                                    ^
+wallet/rpc/contract.cpp:642:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  642 |     if (request.params.size() > 4 && !request.params[4].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:642:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  642 |     if (request.params.size() > 4 && !request.params[4].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:643:45: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  643 |         nGasPrice = AmountFromValue(request.params[4]);
+      |                                             ^~~~~~
+wallet/rpc/contract.cpp:645:34: error: ‘gArgs’ was not declared in this scope; did you mean ‘mapArgs’?
+  645 |         CAmount maxRpcGasPrice = gArgs.GetIntArg("-rpcmaxgasprice", MAX_RPC_GAS_PRICE) * COIN; // Use const from main.h
+      |                                  ^~~~~
+      |                                  mapArgs
+wallet/rpc/contract.cpp:654:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  654 |     if (request.params.size() > 5 && !request.params[5].isNull()) {
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:654:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  654 |     if (request.params.size() > 5 && !request.params[5].isNull()) {
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:655:41: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  655 |         std::string senderStr = request.params[5].get_str();
+      |                                         ^~~~~~
+wallet/rpc/contract.cpp:656:25: error: ‘DecodeDestination’ was not declared in this scope; did you mean ‘CNoDestination’?
+  656 |         senderAddress = DecodeDestination(senderStr);
+      |                         ^~~~~~~~~~~~~~~~~
+      |                         CNoDestination
+wallet/rpc/contract.cpp:667:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  667 |     if (request.params.size() > 6 && !request.params[6].isNull()) fBroadcast = request.params[6].get_bool();
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:667:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  667 |     if (request.params.size() > 6 && !request.params[6].isNull()) fBroadcast = request.params[6].get_bool();
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:667:88: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  667 |     if (request.params.size() > 6 && !request.params[6].isNull()) fBroadcast = request.params[6].get_bool();
+      |                                                                                        ^~~~~~
+wallet/rpc/contract.cpp:670:17: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  670 |     if (request.params.size() > 7 && !request.params[7].isNull()) fPsbt = request.params[7].get_bool();
+      |                 ^~~~~~
+wallet/rpc/contract.cpp:670:47: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  670 |     if (request.params.size() > 7 && !request.params[7].isNull()) fPsbt = request.params[7].get_bool();
+      |                                               ^~~~~~
+wallet/rpc/contract.cpp:670:83: error: request for member ‘params’ in ‘request’, which is of non-class type ‘const int’
+  670 |     if (request.params.size() > 7 && !request.params[7].isNull()) fPsbt = request.params[7].get_bool();
+      |                                                                                   ^~~~~~
+wallet/rpc/contract.cpp:691:41: error: ‘class CWallet’ has no member named ‘GetAvailableBalance’
+  691 |     CAmount availableBalance = pwallet->GetAvailableBalance();
+      |                                         ^~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:738:17: error: ‘CRecipient’ was not declared in this scope
+  738 |     std::vector<CRecipient> vecSend;
+      |                 ^~~~~~~~~~
+wallet/rpc/contract.cpp:738:27: error: template argument 1 is invalid
+  738 |     std::vector<CRecipient> vecSend;
+      |                           ^
+wallet/rpc/contract.cpp:738:27: error: template argument 2 is invalid
+wallet/rpc/contract.cpp:740:15: error: expected ‘;’ before ‘recipient’
+  740 |     CRecipient recipient = {scriptPubKey, nAmount, false}; // Use user-specified amount
+      |               ^~~~~~~~~~
+      |               ;
+wallet/rpc/contract.cpp:741:13: error: request for member ‘push_back’ in ‘vecSend’, which is of non-class type ‘int’
+  741 |     vecSend.push_back(recipient);
+      |             ^~~~~~~~~
+wallet/rpc/contract.cpp:741:23: error: ‘recipient’ was not declared in this scope
+  741 |     vecSend.push_back(recipient);
+      |                       ^~~~~~~~~
+wallet/rpc/contract.cpp:749:16: error: ‘CreateTransaction’ was not declared in this scope; did you mean ‘GetTransaction’?
+  749 |     auto res = CreateTransaction(*pwallet, vecSend, nFeeRet, nChangePosInOut, strFailReason, coinControl, sign);
+      |                ^~~~~~~~~~~~~~~~~
+      |                GetTransaction
+wallet/rpc/contract.cpp:761:29: error: ‘EncodeDestination’ was not declared in this scope; did you mean ‘CNoDestination’?
+  761 |     result.pushKV("sender", EncodeDestination(signSenderAddress));
+      |                             ^~~~~~~~~~~~~~~~~
+      |                             CNoDestination
+wallet/rpc/contract.cpp:766:9: error: ‘PartiallySignedTransaction’ was not declared in this scope
+  766 |         PartiallySignedTransaction psbtx(CMutableTransaction(*tx));
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:768:15: error: ‘TransactionError’ does not name a type
+  768 |         const TransactionError err = pwallet->FillPSBT(psbtx, complete, SIGHASH_ALL, false, true);
+      |               ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:769:13: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+  769 |         if (err != TransactionError::OK) {
+      |             ^~~
+      |             erf
+wallet/rpc/contract.cpp:769:20: error: ‘TransactionError’ has not been declared
+  769 |         if (err != TransactionError::OK) {
+      |                    ^~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:773:17: error: ‘psbtx’ was not declared in this scope
+  773 |         ssTx << psbtx;
+      |                 ^~~~~
+wallet/rpc/contract.cpp: At global scope:
+wallet/rpc/contract.cpp:213:13: warning: ‘std::string {anonymous}::JSONRPCTransactionErrorString(const int&)’ defined but not used [-Wunused-function]
+  213 | std::string JSONRPCTransactionErrorString(const TransactionError& err) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wallet/rpc/contract.cpp:81:6: warning: ‘bool {anonymous}::SetDefaultPayForContractAddress(const CWallet&, CCoinControl&)’ defined but not used [-Wunused-function]
+   81 | bool SetDefaultPayForContractAddress(const CWallet& wallet, CCoinControl & coinControl)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [Makefile:10998: wallet/rpc/libbitcoin_wallet_a-contract.o] Error 1
+make[2]: Leaving directory '/root/digiwage-smartchain/src'
+make[1]: *** [Makefile:14740: all-recursive] Error 1
+make[1]: Leaving directory '/root/digiwage-smartchain/src'
+make: *** [Makefile:764: all-recursive] Error 1
